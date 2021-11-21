@@ -20,11 +20,11 @@ transform = transforms.Compose([
     transforms.Normalize((0.1307), (0.3081))
 ])
 
-dataset_train=datasets.MNIST('./data',train=True,download=True,transform=transform)
-dataset_test=datasets.MNIST('./data',train=False,transform=transform)
+dataset_train = datasets.MNIST('./data', train=True, download=True, transform=transform)
+dataset_test = datasets.MNIST('./data', train=False, transform=transform)
 
-train_loader=torch.utils.data.DataLoader(dataset_train,batch_size=batch_size,shuffle=True)
-test_loader=torch.utils.data.DataLoader(dataset_test,batch_size=batch_size)
+train_loader = torch.utils.data.DataLoader(dataset_train, batch_size=batch_size, shuffle=True)
+test_loader = torch.utils.data.DataLoader(dataset_test, batch_size=batch_size)
 
 
 class Net(nn.Module):
@@ -52,7 +52,6 @@ class Net(nn.Module):
         x = self.fc2(x)
         output = F.log_softmax(x, dim=1)
         return output
-
 
 
 class CNN_Attention(torch.nn.Module):
@@ -90,7 +89,6 @@ class CNN_Attention(torch.nn.Module):
         return v
 
 
-
 def train(model, optimizer, epoch, log_interval):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
@@ -109,6 +107,7 @@ def train(model, optimizer, epoch, log_interval):
             print('Train Epoch: {} batch-{}\tLoss: {:.6f} Learning Rate: {}'.format(epoch, batch_idx, loss.item(), lr))
     lrs.append(lr)
 
+
 def test(model):
     model.eval()
     test_loss = 0
@@ -124,4 +123,4 @@ def test(model):
     test_loss /= len(test_loader.dataset)
 
     print('\nTest set: Average loss: {:.4f}, Accuracy: {:.4f}\n'.format(
-        test_loss,correct / len(test_loader.dataset)))
+        test_loss, correct / len(test_loader.dataset)))
