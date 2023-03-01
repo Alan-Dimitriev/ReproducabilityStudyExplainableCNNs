@@ -1,5 +1,9 @@
-# CISC 867: Group 21 Final Project
+# Reproduction of `An Explainable CNN Approach for Medical Codes Prediction from Clinical Text'
+
 [Final version of report, detailing replication process and results](Group_21_FINAL_REPORT.pdf)
+
+We attempted to reproduce the methods and results reported in 2021 paper [An Explainable CNN Approach for Medical Codes Prediction from Clinical Text](https://doi.org/10.1186/s12911-021-01615-6) by Hu et al.
+
 
 To perform the experiments described in the reproducibility paper:
 
