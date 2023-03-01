@@ -1,4 +1,4 @@
-# Reproduction of `An Explainable CNN Approach for Medical Codes Prediction from Clinical Text'
+# Reproduction of 'An Explainable CNN Approach for Medical Codes Prediction from Clinical Text'
 
 [Final version of report, detailing replication process and results](Group_21_FINAL_REPORT.pdf)
 
