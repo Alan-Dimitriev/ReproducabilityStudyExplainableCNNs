@@ -1,5 +1,5 @@
 # CISC 867: Group 21 Final Project
-Overleaf: https://www.overleaf.com/7491857842fyqjjbnxmvkh
+[Final version of report, detailing replication process and results](Group_21_FINAL_REPORT.pdf)
 
 To perform the experiments described in the reproducibility paper:
 
